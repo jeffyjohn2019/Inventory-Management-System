@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router();
 
-const { getAllInventories, getInventoryByFilter, getInventoryById, createInventory, updateInventory, updateAnyInventory, deleteInventory } = require("../controllers/inventoryCOntoller")
+const { getAllInventories, getInventoryByFilter, getInventoryById, createInventory, updateInventory, updateAnyInventory, deleteInventory } = require("../controllers/inventoryContoller")
 const validateInventory = require('../middleware/validation')
 
 
