@@ -96,7 +96,7 @@ const getInventoryByFilter = (req, res) => {
         success: true,
         count: inventories.length,
         data: inventories,
-        message: "Successfully fetched filtered items"
+        message: inventories.length === 0 ? "No items found" : "Successfully fetched filtered items"
     });
 }
 
@@ -116,7 +116,8 @@ const getInventoryById = (req, res) => {
 
     res.status(200).json({
         success: true,
-        data: item
+        message: "Successfully fetched inventory by id",
+        data: index
     });
 }
 
